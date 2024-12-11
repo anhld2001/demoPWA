@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <title>Work Report Manager</title>
+</head>
+<body>
+  <header>
+    <h1>Work Report Manager</h1>
+    <button id="add-report-btn">Add Report</button>
+  </header>
+
+  <main>
+    <ul id="report-list">
+      <!-- List of reports will be dynamically rendered here -->
+    </ul>
+  </main>
+
+  <div id="report-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-title">Add Report</h2>
+      <label for="report-title">Title:</label>
+      <input type="text" id="report-title">
+      <label for="report-content">Content:</label>
+      <textarea id="report-content"></textarea>
+      <button id="save-report-btn">Save</button>
+      <button id="close-modal-btn">Cancel</button>
+    </div>
+  </div>
+
+  <script src="reportScript.js"></script>
+</body>
+</html>
